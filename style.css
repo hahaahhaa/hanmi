@@ -1,16 +1,29 @@
-.header {
+.header_total {
   display: flex;
   position: sticky;
   top: 0;
+
+  padding: 0 50px;
+
+}
+
+.header_homelink {
+  display: inline;
 }
 
 .header_logo {
-  width: 150px;
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin-right: 84px;
+  background: url("https://www.hanmi.co.kr/images/common/logo_gnb.svg") no-repeat 50% 50% / 100% auto;
+
 }
 
 .header_introduction {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 40px;
   width: 500px;
   font-size: 24px;
@@ -19,4 +32,25 @@
 .header_introduction a {
   text-decoration: none;
   color: black;
+}
+
+.navigation_total {
+  margin: 170px 0 50px;
+  padding: 0 50px;
+}
+
+.navigation_logo{
+  width: 20px;
+  height: 20px;
+  background: url("https://www.hanmi.co.kr/images/common/spr_layout.svg") -146px 0;
+
+}
+
+.navigation_right {
+  top: 50%;
+  right: 17px;
+  width: 6px;
+  height: 10px;
+  margin-top: -5px;
+  background: url("https://www.hanmi.co.kr/images/common/spr_ico.svg") no-repeat -30px 0;
 }
