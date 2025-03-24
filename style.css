@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.header_logo {
+  width: 150px;
+}
+
+.header_introduction {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 500px;
+  font-size: 24px;
+}
+
+.header_introduction a {
+  text-decoration: none;
+  color: black;
+}
