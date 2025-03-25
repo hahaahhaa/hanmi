@@ -2,6 +2,7 @@
   display: flex;
   position: sticky;
   top: 0;
+  background-color: white;
 
   padding: 0 50px;
 
@@ -35,8 +36,11 @@
 }
 
 .navigation_total {
+  display: flex;
   margin: 170px 0 50px;
   padding: 0 50px;
+  align-items: center;
+  gap: 16px;
 }
 
 .navigation_logo{
@@ -53,4 +57,29 @@
   height: 10px;
   margin-top: -5px;
   background: url("https://www.hanmi.co.kr/images/common/spr_ico.svg") no-repeat -30px 0;
+}
+
+
+.title_sentence {
+  font-size: 84px;
+  padding: 0 0 0 32px;
+}
+
+.outline_selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  padding: 60px 480px;
+}
+
+.outline_first_image {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 44px;
+}
+
+.outline_first_paragrah {
+  font-size: 28px;
+  padding: 44px;
 }
