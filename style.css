@@ -83,3 +83,33 @@
   font-size: 28px;
   padding: 44px;
 }
+
+
+
+.outline_number_section {
+  display: flex;
+  padding: 0 44px;
+  border-top: 1px solid gray;
+}
+
+.outline_number_section:last-child {
+  justify-content: flex-end;
+}
+
+.outline_number_box {
+  width: 360px;
+}
+
+.outline_number {
+  font-size: 16px;
+  color: gray;
+}
+
+.outline_number b {
+  font-size: 88px;
+  color: black;
+}
+
+.outline_number_article {
+  font-size: 20px;
+}
