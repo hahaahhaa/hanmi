@@ -1,8 +1,10 @@
 .header_total {
   display: flex;
   position: sticky;
+  z-index: 1;
   top: 0;
   height: 72px;
+  margin-left: -8px;
   background-color: white;
 
   padding: 0 50px;
@@ -93,15 +95,11 @@
 
 .outline_number_section {
   display: flex;
-  position: relative;
-  right: 30px;
   padding: 0 44px;
   border-top: 1px solid gray;
 }
 
-.outline_number_section:last-child {
-  float: right;
-}
+
 
 .outline_number_box {
   width: 360px;
@@ -122,10 +120,38 @@
   font-size: 20px;
 }
 
+.outline_background_section {
+  position: relative;
+}
+
 .outline_background_image {
   width: 100%;
   margin-left: -8px;
   padding: 0 0 20px 0;
+}
+
+.outline_background_text {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  top: 80px;
+  left: 40px;
+
+}
+
+.outline_background_article {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top: 400px;
+  left: 40px;
+  letter-spacing: -1px;
+  line-height: 1.8em;
+}
+
+.outline_background_article h2{
+  font-size: 56px;
 }
 
 
@@ -189,9 +215,21 @@
 }
 
 .outline_achivement_article {
-  font-size: 16px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: -1px;
 }
 
 .outline_achivement_article b {
   font-weight: 700;
+}
+
+.outline_achivement_article:after {
+  content:'';
+  position: absolute;
+  top: 78px;
+  left: 2px;
+  width: 1px;
+  height: 1px;
+  border-top: 5px dotted black;
 }
