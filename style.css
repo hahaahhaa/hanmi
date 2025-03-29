@@ -2,6 +2,7 @@
   display: flex;
   position: sticky;
   top: 0;
+  height: 72px;
   background-color: white;
 
   padding: 0 50px;
@@ -76,7 +77,7 @@
 .outline_first_image {
   font-size: 20px;
   font-weight: 900;
-  padding: 44px;
+  padding: 0 44px;
 }
 
 .outline_first_paragrah {
@@ -84,20 +85,27 @@
   padding: 44px;
 }
 
+.outline_first_paragrah h2 {
+  font-size: 60px;
+}
+
 
 
 .outline_number_section {
   display: flex;
+  position: relative;
+  right: 30px;
   padding: 0 44px;
   border-top: 1px solid gray;
 }
 
 .outline_number_section:last-child {
-  justify-content: flex-end;
+  float: right;
 }
 
 .outline_number_box {
   width: 360px;
+  padding: 0 0 40px 0;
 }
 
 .outline_number {
@@ -112,4 +120,78 @@
 
 .outline_number_article {
   font-size: 20px;
+}
+
+.outline_background_image {
+  width: 100%;
+  margin-left: -8px;
+  padding: 0 0 20px 0;
+}
+
+
+.outline_aside {
+  display: inline-block;
+  font-size: 56px;
+  font-weight: 800;
+  padding: 0 40px;
+  line-height: 1.5em;
+  float: left;
+}
+
+.outline_achivement {
+  display: inline-block;
+  flex-direction: column;
+  padding: 72px;
+}
+
+.outline_achivement_section {
+  display: flex;
+  width: 1160px;
+  border-top: 1px solid black;
+  padding: 0 0 36px 0;
+}
+
+.outline_achivement_circle {
+  width: 70px;
+  height: 40px;
+  padding: 24px 0;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  background: #000;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 46px;
+  margin-top: 30px;
+}
+
+.outline_achivement_circle p {
+  position: relative;
+  top: -20px;
+
+}
+
+.outline_achivement_text {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.outline_achivement_title {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.outline_achivement_title b {
+  font-size: 80px;
+  color: #E1251B;
+}
+
+.outline_achivement_article {
+  font-size: 16px;
+}
+
+.outline_achivement_article b {
+  font-weight: 700;
 }
