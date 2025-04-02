@@ -17,9 +17,6 @@
 
 .header_logo {
   display: inline-block;
-  width: 100px;
-  height: 60px;
-  margin-right: 84px;
   background: url("https://www.hanmi.co.kr/images/common/logo_gnb.svg") no-repeat 50% 50% / 100% auto;
 
 }
@@ -31,12 +28,40 @@
   gap: 40px;
   width: 500px;
   font-size: 24px;
+  font-weight: 800;
 }
 
 .header_introduction a {
   text-decoration: none;
   color: black;
 }
+
+.container {
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 120px;
+}
+
+.header_introduction #about{
+  display: inline-block;
+  animation: text-to-left 4s linear infinite;
+
+}
+
+@keyframes text-to-left {
+  0% {
+    transform: translatex(0%);
+  }
+  100% {
+    transform: translatex(-51%);
+  }
+}
+
+.header_introduction a:hover {
+  color:red;
+}
+
 
 .navigation_total {
   display: flex;
@@ -68,6 +93,10 @@
   padding: 0 0 0 32px;
 }
 
+.title_sentence b {
+  color: #E1251B;
+}
+
 .outline_selection {
   display: flex;
   justify-content: space-between;
@@ -83,12 +112,12 @@
 }
 
 .outline_first_paragrah {
-  font-size: 28px;
+  font-size: 1.6em;
   padding: 44px;
 }
 
 .outline_first_paragrah h2 {
-  font-size: 60px;
+  font-size: 2.4em;
 }
 
 
@@ -99,11 +128,14 @@
   border-top: 1px solid gray;
 }
 
-
+.outline_second_number {
+  margin-left: auto;
+}
 
 .outline_number_box {
   width: 360px;
   padding: 0 0 40px 0;
+
 }
 
 .outline_number {
@@ -119,6 +151,7 @@
 .outline_number_article {
   font-size: 20px;
 }
+
 
 .outline_background_section {
   position: relative;
@@ -178,10 +211,10 @@
 }
 
 .outline_achivement_circle {
-  width: 70px;
+  width: 80px;
   height: 40px;
   padding: 24px 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.1;
   font-weight: 700;
   color: #fff;
@@ -194,7 +227,8 @@
 
 .outline_achivement_circle p {
   position: relative;
-  top: -20px;
+  letter-spacing: -1px;
+  top: -18px;
 
 }
 
@@ -202,11 +236,13 @@
   display: flex;
   flex-direction: column;
   width: 600px;
+  margin-top: 20px;
 }
 
 .outline_achivement_title {
   display: inline-block;
   font-size: 18px;
+  line-height: 65px;
 }
 
 .outline_achivement_title b {
@@ -224,12 +260,62 @@
   font-weight: 700;
 }
 
-.outline_achivement_article:after {
-  content:'';
-  position: absolute;
-  top: 78px;
-  left: 2px;
-  width: 1px;
-  height: 1px;
-  border-top: 5px dotted black;
+.footer_section {
+  border-top: 1px solid rgb(191, 191, 191);
+  padding-bottom: 100px;
+}
+
+.footer_address {
+  display: flex;
+  padding: 90px 0 20px 40px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.footer_address a {
+  text-decoration: none;
+  color: #E1251B;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.footer_article {
+  padding: 20px 40px;
+  line-height: 14px;
+}
+
+.footer_copyright {
+  margin-left: 40px;
+  margin-top: -30px;
+}
+
+
+
+
+
+
+
+@media all and (min-width:1024px) {
+  .header_logo {
+    width: 100px;
+    height: 60px;
+    margin-right: 84px;
+  }
+
+
+}
+
+
+
+@media all and (max-width:1023px) {
+  .header_introduction {
+    display: none;
+  }
+
+  .header_logo {
+    width: 6.0rem;
+    height: 3.2rem;
+    margin-right: 0;
+  }
+
 }
